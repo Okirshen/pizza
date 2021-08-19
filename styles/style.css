@@ -1,0 +1,68 @@
+*,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-section {
+  width: 100vw;
+  height: 40vh;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontenthandler.azureedge.net%2Frecp%2F427%2F2000%2F0%2F389.jpg&f=1&nofb=1');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* flexing hard */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* its for the taste */
+  filter: invert(100%);
+}
+
+.big-text {
+  color: aqua;
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.big-header {
+  background-color: aquamarine;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.big-form {
+  display: flex;
+  flex-direction: column;
+  width: max(30vh, 40rem);
+  padding: 1rem auto;
+}
+
+.big-form > input {
+  border-radius: 1rem;
+  border: 1px solid black;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.big-input {
+  height: 10rem;
+}
+
+.big-form > button {
+  border-radius: 1rem;
+  background-color: red;
+  border: none;
+  padding: 5px;
+  color: white;
+}

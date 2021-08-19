@@ -1,0 +1,14 @@
+{
+	"name": "vite-vanilla-starter-template",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"vite": "^2.4.3"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	}
+}
