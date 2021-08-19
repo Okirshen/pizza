@@ -11,58 +11,81 @@ body {
   align-items: center;
 }
 
-.big-section {
-  width: 100vw;
-  height: 40vh;
-  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontenthandler.azureedge.net%2Frecp%2F427%2F2000%2F0%2F389.jpg&f=1&nofb=1');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
 
-  /* flexing hard */
+  width: 100vw;
+  background-color: hsl(0, 0%, 100%);
+}
+
+header > img {
+  margin-right: 1rem;
+  width: 3rem;
+}
+
+.banner {
+  border-radius: 1rem;
+  margin: 0 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* its for the taste */
-  filter: invert(100%);
 }
 
-.big-text {
-  color: aqua;
+#fast-delivery {
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fback_origin_pic%2F03%2F63%2F86%2F7b5a5ed6b0de7e460b046175cd89ca09.jpg&f=1&nofb=1');
+  background-attachment: fixed;
+  background-size: contain;
+  height: 40vh;
+  color: white;
   font-weight: bolder;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
-.big-header {
-  background-color: aquamarine;
-  padding: 1rem;
+#options {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100vw;
 }
 
-.big-form {
-  display: flex;
+.option {
   flex-direction: column;
-  width: max(30vh, 40rem);
-  padding: 1rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: calc(100vw / 4 - 5rem);
+  aspect-ratio: 1/1;
 }
 
-.big-form > input {
-  border-radius: 1rem;
-  border: 1px solid black;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-}
-
-.big-input {
-  height: 10rem;
-}
-
-.big-form > button {
-  border-radius: 1rem;
-  background-color: red;
-  border: none;
-  padding: 5px;
+.option-text {
+  font-weight: 900;
+  font-size: larger;
   color: white;
+  background-color: red;
+  padding: 0.25rem;
+}
+
+.option > img {
+  transition: all 200ms linear;
+  width: calc(100vw / 4 - 10rem);
+}
+
+.option:hover > img {
+  width: calc(100vw / 4 - 5rem);
+}
+
+#order {
+  background-color: red;
+  height: 18vh;
+}
+
+#order-small {
+  width: 100%;
+  height: calc(18vh - 6rem);
+  background-color: white;
+  color: red;
 }
